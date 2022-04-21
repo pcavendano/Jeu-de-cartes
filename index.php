@@ -1,15 +1,21 @@
-<! –– and the comment closes with ––>
+<!--
+Comments in a PHP file
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Activite 9</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+not <! –– ––>
+
+
+Tets d'utilisation des constantes
+define -> TITLE majuscules, guimets simples.
+pour l'utiliser TITLE -> sans $ sign
+
+define works inside iterative structures
+const only works outside iterative structures
+-->
+<?php
+define ('TITLE', 'Activité 9');
+
+include 'head.php';
+?>
     <body>
     <?php
         echo("<p>Hellojkwedhweidh</p>");
