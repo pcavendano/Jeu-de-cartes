@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b50de491-84c1-4abb-ad75-9412be89cb46" name="creation sites web" url="http://jeudecartes">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\environnement-developpement\Jeu-de-cartes" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
