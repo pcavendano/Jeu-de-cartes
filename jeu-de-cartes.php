@@ -33,13 +33,13 @@ for ($compteur = 0; $compteur < 56; $compteur +=1) {
 	if($compteur >= 14 && $compteur < 28){
 		$tb_carreau[$card_position] = $utf_cards.$card_nb;
 		$card_nb +=1;
-		echo $tb_carreau[$card_position];
+		echo '<div class="red">'.$tb_carreau[$card_position].'</div>';
 		$card_position +=1;
 	}
 	if($compteur >= 28 && $compteur < 42){
 		$tb_piques[$card_position] = $utf_cards.$card_nb;
 		$card_nb +=1;
-		echo $tb_piques[$card_position];
+		echo '<div class="red">'.$tb_piques[$card_position].'</div>';
 		$card_position +=1;
 	}
 	if($compteur >= 42 && $compteur < 56){
@@ -60,7 +60,7 @@ function melanger ($tab_piques, $tab_dames, $tab_carreau, $tb_coeurs){
 		array_push($mix_cards_2,$tab_dames[$i]);
 		array_push($mix_cards_2,$tab_piques[$i]);
 		echo $tab_dames[$i] ;
-		echo $tab_piques[$i] ;
+		echo '<div class="red">'.$tab_piques[$i].'</div>' ;
 		if(($i+1) % 7 == 0 && $i != 0 && $i != 1){
 			echo "<br>";
 		}
@@ -69,7 +69,7 @@ function melanger ($tab_piques, $tab_dames, $tab_carreau, $tb_coeurs){
 	for($i = 0; $i < count($tab_carreau) ; $i += 1){
 		 array_push($mix_cards_1,$tab_carreau[$i]);
 		array_push($mix_cards_1,$tb_coeurs[$i]);
-		echo $tab_carreau[$i] ;
+		echo '<div class="red">'.$tab_carreau[$i].'</div>' ;
 		echo $tb_coeurs[$i] ;
 		if(($i+1) % 7 == 0 && $i != 0 && $i != 1){
 			echo "<br>";

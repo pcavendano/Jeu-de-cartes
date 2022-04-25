@@ -9,8 +9,14 @@
 	<link rel="stylesheet" href="">
     <style>
         body{
-            font-size: 45px;
+            font-size: 40px;
             text-align: center;
+        }
+        .red{
+            color:red;
+        }
+        div{
+            display: inline;
         }
     </style>
 </head>
